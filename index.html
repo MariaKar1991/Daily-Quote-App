@@ -12,19 +12,32 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+<body>
+    <!-- Container for the quote box -->
     <div class="quote-box">
+      <!-- Heading for the quote box -->
       <h2>Quote of the day</h2>
+
+      <!-- Blockquote element to display the quote -->
       <blockquote id="quote">Loading...</blockquote>
+
+      <!-- Span element to display the author of the quote -->
       <span id="author">Loading...</span>
+
+      <!-- Container for buttons -->
       <div>
+        <!-- Button to fetch a new quote using the getquote function -->
         <button onclick="getquote(api_url)">New Quote</button>
+
+        <!-- Button to trigger the tweet function -->
         <button onclick="tweet()">
+          <!-- Image element for the Twitter icon -->
           <img src="twitter.png" alt="twitter" />Tweet
         </button>
       </div>
     </div>
 
+    <!-- Script tag linking to external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
